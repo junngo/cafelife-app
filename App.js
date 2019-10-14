@@ -64,9 +64,9 @@ export default function App() {
   }, []);
 
   return loaded && client && isLoggedIn !== null ? (
-    <ApolloProvider client={client}>
-      <ThemeProvider theme={styles}>
-        <AuthProvider isLoggedIn={isLoggedIn}>>
+    <ApolloProvider client={ client }>
+      <ThemeProvider theme={ styles }>
+        <AuthProvider isLoggedIn={ isLoggedIn }>
           <NavController />
         </AuthProvider>
       </ThemeProvider>
